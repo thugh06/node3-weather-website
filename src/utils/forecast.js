@@ -14,7 +14,7 @@ const forecast = (lat, long, callback) => {
         else {
             // const { body } = response;
             const currentWeather = body.current
-            callback(undefined, currentWeather.weather_descriptions[0] + ". It is currently " + currentWeather.temperature + " degrees out. It feels like " + currentWeather.feelslike + " degrees out.")
+            callback(undefined, currentWeather.weather_descriptions[0] + ". It is currently " + currentWeather.temperature + " degrees out. It feels like " + currentWeather.feelslike + " degrees out. The cloud cover is percentage is  " + currentWeather.cloudcover)
         }
     }) 
 }
